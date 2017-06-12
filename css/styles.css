@@ -1,0 +1,438 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background: #ECE8E8; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 0;
+  margin-right: 0px;
+  background: white; }
+  header div.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    header div.menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none;
+      margin-top: 0px;
+      padding-left: 0px;
+      margin-bottom: 0px; }
+    header div.menu li {
+      padding: 10px;
+      font-size: 1.2em;
+      padding-right: 20px;
+      padding-left: 20px; }
+      header div.menu li:first-child {
+        background: tomato;
+        padding-right: 10px;
+        margin-right: 0;
+        color: white; }
+        header div.menu li:first-child a {
+          color: white; }
+        header div.menu li:first-child:hover {
+          background: dimgrey;
+          cursor: pointer; }
+        header div.menu li:first-child a:hover {
+          cursor: pointer; }
+      header div.menu li:nth-child(2) {
+        margin-left: 0; }
+      header div.menu li a {
+        text-decoration: none;
+        color: black; }
+        header div.menu li a:hover {
+          cursor: pointer;
+          color: white; }
+      header div.menu li:hover {
+        background: dimgray;
+        cursor: pointer; }
+        header div.menu li:hover a {
+          color: white; }
+    header div.menu #book {
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 10px;
+      margin-right: 0px;
+      padding-bottom: 0px;
+      color: black;
+      background: #ECE8E8;
+      height: 45px; }
+      header div.menu #book:hover {
+        background: grey;
+        cursor: pointer;
+        color: white; }
+    @media (max-width: 600px) {
+      header div.menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center; }
+        header div.menu ul {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+
+main {
+  margin-top: 0;
+  margin-right: 0; }
+  main div.registro {
+    width: 100%;
+    min-height: 700px;
+    margin-right: auto;
+    background: url("../images/hotel1.jpg");
+    background-size: 100% 900px;
+    margin-bottom: 0px;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    main div.registro div.form {
+      width: 600px;
+      height: 350px;
+      background: white;
+      margin-left: 20px;
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      main div.registro div.form div.tituloForm {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 2.3em;
+        color: white;
+        padding: 20px;
+        background: tomato; }
+      main div.registro div.form div.checkes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+      main div.registro div.form div.checkes1, main div.registro div.form div.checkes2, main div.registro div.form div.personas1, main div.registro div.form div.personas2 {
+        margin-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        main div.registro div.form div.checkes1 label, main div.registro div.form div.checkes2 label, main div.registro div.form div.personas1 label, main div.registro div.form div.personas2 label {
+          margin-right: 120px;
+          font-size: 1.2em;
+          margin-left: 40px;
+          margin-bottom: 10px; }
+        main div.registro div.form div.checkes1 input, main div.registro div.form div.checkes2 input, main div.registro div.form div.personas1 input, main div.registro div.form div.personas2 input {
+          margin-right: 75px;
+          margin-left: 40px;
+          height: 30px;
+          width: 140px; }
+      main div.registro div.form div.personas {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-top: 30px; }
+      main div.registro div.form button {
+        margin-top: 30px;
+        margin-left: 40px;
+        width: 200px;
+        height: 35px;
+        background: #5B5959;
+        color: white;
+        font-size: 1.2em;
+        border: none; }
+        main div.registro div.form button:hover {
+          background: #B2B0B0;
+          color: black;
+          cursor: pointer; }
+      @media (max-width: 650px) {
+        main div.registro div.form {
+          width: 80%;
+          height: 500px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+          main div.registro div.form div.checkes, main div.registro div.form div.personas {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-item-align: center;
+                align-self: center; }
+          main div.registro div.form button {
+            -ms-flex-item-align: center;
+                align-self: center; } }
+      @media (max-width: 450px) {
+        main div.registro div.form {
+          height: 500px;
+          width: 80%; } }
+  main div.rooms {
+    margin-top: 0px;
+    background: #ECE8E8;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-right: 10px; }
+    main div.rooms div.registroHabitaciones {
+      margin-top: 20px; }
+      main div.rooms div.registroHabitaciones form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+      main div.rooms div.registroHabitaciones div.checkes1, main div.rooms div.registroHabitaciones div.checkes2, main div.rooms div.registroHabitaciones div.personas1, main div.rooms div.registroHabitaciones div.personas2 {
+        margin-top: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        main div.rooms div.registroHabitaciones div.checkes1 label, main div.rooms div.registroHabitaciones div.checkes2 label, main div.rooms div.registroHabitaciones div.personas1 label, main div.rooms div.registroHabitaciones div.personas2 label {
+          margin-right: 80px;
+          font-size: 1.2em;
+          margin-left: 10px;
+          margin-bottom: 10px; }
+        main div.rooms div.registroHabitaciones div.checkes1 input, main div.rooms div.registroHabitaciones div.checkes2 input, main div.rooms div.registroHabitaciones div.personas1 input, main div.rooms div.registroHabitaciones div.personas2 input {
+          margin-right: 80px;
+          margin-left: 10px;
+          height: 30px;
+          width: 140px; }
+      main div.rooms div.registroHabitaciones div.boton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 10px; }
+        main div.rooms div.registroHabitaciones div.boton span {
+          color: black;
+          margin-bottom: 10px; }
+        main div.rooms div.registroHabitaciones div.boton button {
+          background: black;
+          color: white;
+          border: none;
+          padding: 10px;
+          font-size: 1em;
+          width: 150px; }
+          main div.rooms div.registroHabitaciones div.boton button:hover {
+            cursor: pointer;
+            background: #5B5959; }
+      @media (max-width: 1140px) {
+        main div.rooms div.registroHabitaciones form {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        main div.rooms div.registroHabitaciones div.checkes1, main div.rooms div.registroHabitaciones div.checkes2, main div.rooms div.registroHabitaciones div.personas1, main div.rooms div.registroHabitaciones div.personas2 {
+          margin-top: 10px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          main div.rooms div.registroHabitaciones div.checkes1 label, main div.rooms div.registroHabitaciones div.checkes2 label, main div.rooms div.registroHabitaciones div.personas1 label, main div.rooms div.registroHabitaciones div.personas2 label {
+            margin-right: 80px;
+            font-size: 1.2em;
+            margin-left: 10px;
+            margin-bottom: 10px; }
+          main div.rooms div.registroHabitaciones div.checkes1 input, main div.rooms div.registroHabitaciones div.checkes2 input, main div.rooms div.registroHabitaciones div.personas1 input, main div.rooms div.registroHabitaciones div.personas2 input {
+            margin-right: 70px;
+            margin-left: 10px;
+            height: 30px;
+            width: 140px; }
+        main div.rooms div.registroHabitaciones div.boton {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-right: 70px; } }
+    main div.rooms div.habitaciones {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 40px;
+      margin-left: 15px; }
+      main div.rooms div.habitaciones div.habitacion1, main div.rooms div.habitaciones div.habitacion2, main div.rooms div.habitaciones div.habitacion3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background: white;
+        color: black;
+        margin-right: 30px;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+        main div.rooms div.habitaciones div.habitacion1 img, main div.rooms div.habitaciones div.habitacion2 img, main div.rooms div.habitaciones div.habitacion3 img {
+          width: 400px;
+          height: 350px; }
+        main div.rooms div.habitaciones div.habitacion1 h3, main div.rooms div.habitaciones div.habitacion1 p, main div.rooms div.habitaciones div.habitacion1 span, main div.rooms div.habitaciones div.habitacion2 h3, main div.rooms div.habitaciones div.habitacion2 p, main div.rooms div.habitaciones div.habitacion2 span, main div.rooms div.habitaciones div.habitacion3 h3, main div.rooms div.habitaciones div.habitacion3 p, main div.rooms div.habitaciones div.habitacion3 span {
+          margin-left: 25px; }
+        main div.rooms div.habitaciones div.habitacion1 span i, main div.rooms div.habitaciones div.habitacion2 span i, main div.rooms div.habitaciones div.habitacion3 span i {
+          margin-right: 10px; }
+        main div.rooms div.habitaciones div.habitacion1 button, main div.rooms div.habitaciones div.habitacion2 button, main div.rooms div.habitaciones div.habitacion3 button {
+          border: none;
+          background: black;
+          color: white;
+          padding: 15px;
+          margin-left: 12px;
+          margin-right: 12px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 1em; }
+          main div.rooms div.habitaciones div.habitacion1 button:hover, main div.rooms div.habitaciones div.habitacion2 button:hover, main div.rooms div.habitaciones div.habitacion3 button:hover {
+            background: #B2B0B0;
+            color: black;
+            cursor: pointer;
+            -webkit-transition: 0.7s;
+            transition: 0.7s; }
+      @media (max-width: 1300px) {
+        main div.rooms div.habitaciones {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          main div.rooms div.habitaciones div.habitacion1, main div.rooms div.habitaciones div.habitacion2, main div.rooms div.habitaciones div.habitacion3 {
+            margin-top: 30px; } }
+  main div.about {
+    background: #ECE8E8;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    main div.about div.acercaDe {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 40%;
+      margin-left: 40px; }
+      main div.about div.acercaDe h2 {
+        font-size: 2em; }
+      main div.about div.acercaDe p {
+        font-size: 1.2em; }
+        main div.about div.acercaDe p i {
+          margin-right: 5px; }
+    main div.about div.mapa {
+      width: 60%;
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-right: 20px; }
+      main div.about div.mapa iframe {
+        width: 770px; }
+    @media (max-width: 1270px) {
+      main div.about {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main div.about div.acercaDe {
+          width: 70%; }
+        main div.about div.mapa {
+          display: none; } }
+  main div.contacto1 {
+    background: #ECE8E8;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    main div.contacto1 p {
+      margin-right: 60px;
+      font-size: 1.4em; }
+      main div.contacto1 p:first-child {
+        margin-left: 50px; }
+    main div.contacto1 i {
+      color: tomato; }
+    @media (max-width: 1000px) {
+      main div.contacto1 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  main div.infoRandom {
+    height: 100px;
+    background: tomato;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.3em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main div.infoRandom span {
+      padding: 15px;
+      background: orange;
+      color: white;
+      margin-right: 10px; }
+    main div.infoRandom p {
+      color: white; }

@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+}
+
+//variables
+
+$gris: #ECE8E8;
+$colorBoton: #5B5959;
+$colorBoton2: #B2B0B0;
+
+//////
+//mixins
+
+@mixin registroForms($mL1, $mL2, $mR1, $mR2){
+div.checkes1, div.checkes2, div.personas1, div.personas2{    
+                 margin-top: 10px;
+                 display: flex;
+                 flex-direction: column;
+               label{
+                   margin-right: $mR1;
+                 
+                   font-size: 1.2em;
+                   margin-left: $mL1;
+                   margin-bottom: 10px;
+               }
+                 input{
+                   margin-right:$mR2;
+                   margin-left: $mL2;
+                   height: 30px;
+
+                   width: 140px;
+               }
+
+           }
+}
+
+////
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background: $gris;
+}
+
+
+
+header{
+    display: flex;
+    width: 100%;
+  margin-bottom: 0;
+  margin-right: 0px;
+  background: white;
+    div.menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+      ul{
+            display: flex;
+            list-style: none;  
+            margin-top: 0px;
+            padding-left: 0px;
+            margin-bottom: 0px;
+        }
+
+        li{
+
+            &:first-child{
+                background: tomato;
+                padding-right: 10px;
+                margin-right: 0;
+                color: white;
+                a{
+                    color: white;
+                }
+                &:hover{
+                    background: dimgrey;
+                    cursor:pointer;
+                }
+                a:hover{
+                    cursor:pointer;
+                }
+            }
+            &:nth-child(2){
+                margin-left: 0;
+            }
+            padding: 10px;
+            font-size: 1.2em;
+            padding-right: 20px;
+            padding-left: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+
+            &:hover{
+                background: dimgray;
+                cursor: pointer;
+                a{
+                    color: white;
+                }
+            }
+        }
+
+        #book{
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            margin-right: 0px;
+            padding-bottom: 0px;
+            color: black;
+            background: $gris;
+            height: 45px;
+
+            &:hover{
+                background: grey;
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+    @media (max-width: 600px){
+        ul{
+            flex-direction: column;
+        }
+        flex-direction: column;
+        text-align: center;
+    }
+
+    }//menu
+}
+
+main{
+    margin-top: 0;
+    margin-right: 0;
+    div.registro{
+        width: 100%;
+            min-height: 700px;
+       margin-right: auto; 
+       background: url("../images/hotel1.jpg");
+       background-size: 100% 900px;
+       margin-bottom: 0px;
+      
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //position: relative;
+        
+        div.form{
+          //  position: absolute
+            width: 600px;
+            height: 350px;
+            background: white;
+            margin-left: 20px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display: flex;
+            flex-direction: column;
+            div.tituloForm{
+                display: flex;
+                font-size: 2.3em;
+                color: white;
+                padding: 20px;
+                background: tomato;
+            }
+
+
+            div.checkes{
+                display: flex;
+                flex-direction: row;
+            }
+           
+            @include registroForms(40px, 40px, 120px, 75px);
+
+            div.personas{
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+        
+
+           }
+
+           button{
+               margin-top: 30px;
+               margin-left: 40px;
+               width: 200px;height: 35px;
+               background: $colorBoton;
+               color: white;
+               font-size: 1.2em;
+               border: none;
+
+               &:hover{
+                   background: $colorBoton2;
+                   color: black;
+                   cursor: pointer;
+               }
+           }
+
+           @media (max-width: 650px){
+
+               
+                   width: 80%;
+                  height: 500px;
+                   align-self: center;
+
+               
+               div.checkes, div.personas{
+                   flex-direction: column;
+                   align-self: center;
+               }
+               button{
+                   align-self: center;
+               }
+           }
+           @media (max-width: 450px){
+                height: 500px;
+                width: 80%;
+           }
+       
+        }//form
+    }//registro
+
+    div.rooms{
+        margin-top: 0px;
+       
+        background: $gris;
+
+        margin-left: 25px;
+        margin-top: 20px;
+        margin-right: 10px;
+        div.registroHabitaciones{
+            margin-top: 20px;
+           
+            form{
+                display: flex;
+               
+            }
+
+               @include registroForms(10px, 10px,80px, 80px);
+             
+             div.boton{
+                 display: flex;
+                 flex-direction:column;
+                 margin-top: 10px;
+            
+                 span{
+                     color: black;
+                     margin-bottom: 10px;
+                 }
+
+                 button{
+                     
+                     background: black;
+                     color: white;
+                     border: none;
+                     padding: 10px;
+                     font-size: 1em;
+                     width: 150px;
+
+                     &:hover{
+                         cursor: pointer;
+                         background: $colorBoton;
+                     }
+                 }
+             }
+
+             @media (max-width: 1140px){
+                 form{
+                    // flex-direction: column;
+                     flex-wrap: wrap;
+                     justify-content: center;
+                     align-items: center;
+                 }
+                @include registroForms(10px, 10px,80px, 70px);  
+                 div.boton{
+                     justify-content: center;
+                     align-items: center;
+                     margin-right: 70px;
+                 }
+             }
+
+        }/// registro habitaciones
+
+
+        div.habitaciones{
+            display: flex;
+            margin-top: 40px;
+            margin-left: 15px;
+
+            div.habitacion1, div.habitacion2, div.habitacion3{
+                display: flex;
+                flex-direction: column;
+                background: white;
+                color: black;
+                margin-right: 30px;
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+                img{
+                    width: 400px;
+                    height: 350px;
+
+                }
+
+                h3, p, span{
+                    margin-left: 25px;
+
+                }
+
+                span i{
+                    margin-right: 10px;
+                }
+
+                button{
+                    border: none;
+                    background: black;
+                    color: white;
+                    padding: 15px;
+                    margin-left: 12px;
+                    margin-right: 12px;
+                    margin-top: 10px;   
+                    margin-bottom: 10px;
+                    font-size: 1em;
+
+                    &:hover{
+                        background: $colorBoton2;
+                        color: black;
+                        cursor: pointer;
+                        transition: 0.7s;
+                    }
+                }
+            }
+
+
+            @media (max-width: 1300px){
+               // flex-direction: column;
+               // width: 600px;
+              
+ 
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                 div.habitacion1, div.habitacion2, div.habitacion3{
+                     margin-top: 30px;
+                 }
+            }
+        }
+    }////rooms
+
+    div.about{
+          background: $gris;
+          margin-top: 20px;
+          display: flex;
+
+          div.acercaDe{
+              display: flex;
+              flex-direction: column;
+              width: 40%;   
+
+              margin-left: 40px;
+
+              h2{
+
+                  font-size: 2em;
+              }
+              p{
+                  font-size: 1.2em;
+                  i{
+                      margin-right: 5px;
+                  }
+              }
+            
+          }
+
+          div.mapa{
+              width: 60%;
+              margin-top: 20px;
+              margin-left: 40px;   
+              margin-right: 20px;
+              iframe{
+                  width: 770px;
+                  
+              }                 
+          }
+          
+          @media (max-width:1270px ){
+              
+             // flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+            div.acercaDe{
+                width: 70%;
+            }
+              div.mapa{
+                  display: none;
+              }
+          }
+    }///about
+
+
+    div.contacto1{
+          background: $gris;
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p{
+              &:first-child{
+                  margin-left: 50px;
+              }
+
+              margin-right: 60px;
+              font-size: 1.4em;
+          }
+
+          i{
+              color: tomato;
+          }
+
+          @media (max-width: 1000px){
+              flex-direction: column;
+          }
+    }//contacto 1
+
+    div.infoRandom{
+        height: 100px;
+        background: tomato;
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.3em;
+
+        justify-content: center;
+        align-items: center;
+        span{
+            padding: 15px;
+            background: orange;
+            color: white;
+            //height: 40px;
+            margin-right: 10px;
+        }
+
+        p{
+            color: white;
+        }
+    }
+
+}
